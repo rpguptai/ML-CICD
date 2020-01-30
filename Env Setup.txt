@@ -1,0 +1,18 @@
+go to any folder : 
+
+Create virtualenv:
+
+python -m venv ENVIRONMENT_NAME
+
+
+Activate virtualenv (Windows):
+(cd into the directory where you created the virtualenv):
+ENVIRONMENT_NAME\Scripts\activate
+
+
+Deactivate virtualenv:
+deactivate
+
+=============================================================
+
+pip install -r requirements.txt

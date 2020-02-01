@@ -16,3 +16,12 @@ deactivate
 =============================================================
 
 pip install -r requirements.txt
+
+
+=======================
+
+heroku git:remote -a mlcicd
+
+git checkout -b my-test-branch
+
+git push heroku my-test-branch:master

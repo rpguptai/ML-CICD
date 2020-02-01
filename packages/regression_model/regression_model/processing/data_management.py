@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.externals import joblib
 from sklearn.pipeline import Pipeline
 
-from reg_model.config import config
+from regression_model.config import config
 
 
 def load_dataset(*, file_name: str
@@ -14,7 +14,7 @@ def load_dataset(*, file_name: str
 def save_pipeline(*, pipeline_to_persist) -> None:
     """Persist the pipeline."""
 
-    save_file_name = 'reg_model.pkl'
+    save_file_name = 'regression_model.pkl'
     save_path = config.TRAINED_MODEL_DIR / save_file_name
     joblib.dump(pipeline_to_persist, save_path)
 
